@@ -23,7 +23,37 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
    <button onclick="javascript:colorBackground()">Change the background</button>
               <button onclick="javascript:undoColor()">Undo the background</button> 
+  <script language="javascript">
+    fucntion colorBackground () {
+      if (document.body.style.background = "../../../assets/images/background.jpg") {
+        document.body.className = "changebackground";
+      } else {
+        document.body.className = "undoBackground";
+      }
+    } 
+    
+    function undoColor () {
+      if (document.body.style.background = "gray") {
+        document.body.className = "undoBackground";
+      } else {
+        document.body.className = "changeBackground";
+      }
+    } 
+    
+  </script>
   
+  <style> 
+    .changeBackground section{
+      background-image : none;
+      background-color : gray;
+    }
+    .undoBacground sectoin{
+      backgorund-color : #808080;
+      backgorund-image : "../../../assets/images/background3.jpg";
+    }
+  </style>
+
+
   
   
 </head>
