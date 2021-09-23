@@ -21,31 +21,14 @@
   <!-- <link rel="preload" as="style" -->
  
   
-  <script language="javascript">
-    
-       function colorBackground () {
-           if (document.body.style.background = "../../../assets/images/background3.jpg") {
-              document.body.className = "changeBackground";
-           } else {
-              document.body.className = "undoBackground";
-           }
-       }
-    
-       function undoColor () {
-            if (document.body.style.background = "#FFB6C1") {
-               document.body.className = "undoBackground";
-            } else {
-               document.body.className = "changeBackground";
-            }
-       }
-    
-  </script>
-  
   <style>
     .changeBackground section{
         background-image : none;
         background-color : #FFB6C1;
     }
+  </style>
+  <scriptlanguage="JavaScript">
+    function changeBackground() {
     .undoBackground section{
         background-color : #FFF;
         background-image : "../../../assets/images/background3.jpg";
