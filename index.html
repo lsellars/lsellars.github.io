@@ -19,39 +19,39 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style"
-        
+ 
   <script language="javascript">
+    
+       function colorBackground () {
+           if (document.body.style.background = "../../../assets/images/background3.jpg") {
+              document.body.className = "changeBackground";
+           } else {
+              document.body.className = "undoBackground";
+           }
+       }
+    
+       function undoColor () {
+            if (document.body.style.background = "#708090") {
+               document.body.className = "undoBackground";
+            } else {
+               document.body.className = "changeBackground";
+            }
+       }
+    
+  </script>
+  
+  <style>
+    .changeBackground section{
+        background-image : none;
+        background-color : #708090;
+    }
+    .undoBackground section{
+        background-color : #D584E5;
+        background-image : "../../../assets/images/background3.jpg";
+    }
+  </style>
   
-    function colorBackground () {
-      if (document.body.style.background = "../../../assets/images/background3.jpg") {
-        document.body.className = "changeBackground";
-      } else {
-        document.body.className = "undoBackground";
-      }
-    } 
-    
-    function undoColor () {
-      if (document.body.style.background = "#FFC0CB) {
-        document.body.className = "undoBackground";
-      } else {
-        document.body.className = "changeBackground";
-      }
-    } 
-    
-  </script>
   
-  <style> 
-    .changeBackground section{
-      background-image : none;
-      background-color : #FFC0CB;
-    }
-    .undoBackground section{
-      background-color : #FFF;
-      background-image : "../../../assets/images/background3.jpg";
-    }
-  </style>
-       
-
 </head>
 <body>
   
