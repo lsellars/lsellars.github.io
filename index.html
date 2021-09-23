@@ -19,7 +19,36 @@
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style"
-         
+    <script language="javascript">
+    function colorBackground () {
+      if (document.body.style.background = "../../../assets/images/background.jpg") {
+        document.body.className = "changeBackground";
+      } else {
+        document.body.className = "undoBackground";
+      }
+    } 
+    
+    function undoColor () {
+      if (document.body.style.background = "gray") {
+        document.body.className = "undoBackground";
+      } else {
+        document.body.className = "changeBackground";
+      }
+    } 
+    
+  </script>
+  
+  <style> 
+    .changeBackground section{
+      background-image : none;
+      background-color : #808080;
+    }
+    .undoBackground section{
+      background-color : #808080;
+      background-image : "../../../assets/images/background3.jpg";
+    }
+  </style>
+       
 
 </head>
 <body>
