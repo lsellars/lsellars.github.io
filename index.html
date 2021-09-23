@@ -23,35 +23,7 @@
   <button onclick="javascript:colorBackground()">Change the background</button>
   <button onclick="javascript:undoColor()">Undo the background</button> 
   
-    <script language="javascript">
-    function colorBackground () {
-      if (document.body.style.background = "../../../assets/images/background.jpg") {
-        document.body.className = "changeBackground";
-      } else {
-        document.body.className = "undoBackground";
-      }
-    } 
-    
-    function undoColor () {
-      if (document.body.style.background = "gray") {
-        document.body.className = "undoBackground";
-      } else {
-        document.body.className = "changeBackground";
-      }
-    } 
-    
-  </script>
   
-  <style> 
-    .changeBackground section{
-      background-image : none;
-      background-color : #808080;
-    }
-    .undoBackground section{
-      background-color : #808080;
-      background-image : "../../../assets/images/background3.jpg";
-    }
-  </style>
 
   
 </head>
